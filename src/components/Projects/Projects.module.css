@@ -1,0 +1,89 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  background-color: rgba(12, 12, 12, 0.6);
+  border-radius: 15px;
+  padding: 73px;
+  margin-top: 129px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+  color: var(--color-text);
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5rem;
+  color: var(--color-text);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+/* Tablet responsiveness */
+@media screen and (max-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 60px 40px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 1000px) {
+  .container {
+    background-color: transparent;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 100px;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Small mobile */
+@media screen and (max-width: 600px) {
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .container {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 80px;
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 2.5rem;
+  }
+}

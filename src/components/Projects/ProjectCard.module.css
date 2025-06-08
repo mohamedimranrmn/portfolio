@@ -1,0 +1,151 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  box-shadow: 0 16px 32px rgba(4, 21, 45, 0.3);
+  padding: 24px;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(87, 108, 188, 0.2);
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(4, 21, 45, 0.4);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  /*object-fit: cover;*/
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text, #fff);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  flex-grow: 1;
+  margin-bottom: 16px;
+}
+
+.skills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.skill {
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 20px;
+  background: var(--color-dark, #04152d);
+  color: var(--color-text, #fff);
+  padding: 6px 12px;
+  white-space: nowrap;
+  border: 1px solid rgba(87, 108, 188, 0.3);
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.link {
+  flex: 1;
+  text-decoration: none;
+  color: var(--color-text, #fff);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  background: var(--color-primary, #576cbc);
+  padding: 12px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.link:hover {
+  background: rgba(87, 108, 188, 0.8);
+  border-color: var(--color-primary, #576cbc);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .image {
+    height: 180px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .skill {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .link {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 18px;
+  }
+
+  .image {
+    height: 160px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .link {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

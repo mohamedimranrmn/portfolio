@@ -1,0 +1,25 @@
+[
+  {
+    "title": "Employee MS",
+    "imageSrc": "projects/img.png",
+    "description": "A web-based system for admins to manage employees,salaries and assign projects.",
+    "skills": ["React.js", "Node.js", "Express.js","MongoDB"],
+    "demo": "https://employee-ms-4627.onrender.com/",
+    "source": "https://github.com/mohamedimranrmn/employeems"
+  },
+  {
+    "title": "Pasikkodu Mobile App",
+    "imageSrc": "projects/Logo.png",
+    "description": "Food donation App for seamless food donation,connecting donors and NGOs.",
+    "skills": ["React Native","Expo", "Firebase","Clerk Auth"],
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Chess Game Outcome prediction using ML",
+    "imageSrc": "projects/chess.png",
+    "description": "Developed a machine learning model to predict chess game\n outcomes using Q-learning and the Minmax algorithm",
+    "skills": ["Python", "PyGame", "Numpy"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]
