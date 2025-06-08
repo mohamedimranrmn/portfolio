@@ -2,21 +2,19 @@
   {
     "role": " Data Analytics Intern",
     "organisation": "Accenture",
-    "startDate": "Sept, 2022",
-    "endDate": "Present",
-    "experiences": ["Worked on Google Maps", "Reduced load times by 50%"],
+    "startDate": "Sept, 2024",
     "imageSrc": "history/accenture.png"
   },
   {
     "role": "Software Engineer Intern",
     "organisation": "HackerRank",
-    "startDate": "Aug, 2021",
+    "startDate": "Oct, 2024",
     "imageSrc": "history/hackerrank.png"
   },
   {
     "role": "Programming in Java",
     "organisation": "NPTEL",
-    "startDate": "Jan, 2021",
+    "startDate": "May, 2025",
     "imageSrc": "history/nptel.jpeg"
   }
 ]
